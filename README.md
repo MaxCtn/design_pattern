@@ -3,10 +3,10 @@
 
 ### Définition : 
 
-Le design pattern observer est l'un des pattern java le plus utile et utilisé.
+Le design pattern "Observer" est l'un des pattern java le plus utile et utilisé.
 Il est utilisé pour envoyer un signal à des modules qui jouent le rôle d'observateurs. En cas de notification, les observateurs effectuent alors l'action adéquate en fonction des informations qui parviennent depuis les modules qu'ils observent (les observables). On l'utilise principalemement lorsque l'on doit gérer des évènements.
 
-### Mais comment il fonctionne ? 
+### Mais comment fonctionne-t-il ? 
 Dans une classe qui doit déclencher des évenements, on dois y ajouter:
 
     En attribut : une liste d'Observateurs
@@ -23,10 +23,10 @@ Dans une classe qui doit déclencher des évenements, on dois y ajouter:
 
 ### Définition : 
 
-Le design pattern singleton qui lui aussi l'un des designs patterns le plus utlisé.
-Il répond à plusieurs exigences l'un des plus importants est que celui-ci doit doit s'assurer qu'une classe ne puisse produire qu'une seule et unique instance.
+Le design pattern "Singleton" est lui aussi l'un des designs patterns le plus utlisé.
+Il répond à plusieurs exigences, l'une des plus importantes est que celui-ci doit doit s'assurer qu'une classe ne puisse produire qu'une seule et unique instance.
 
-### Mais comment il fonctionne ? 
+### Mais comment fonctionne-t-il ? 
 
 
 Afin de garantir l'unicité du Singleton, il est nécessaire de contrôler strictement son processus d'instanciation. C'est pourquoi il faut retirer la possibilité de produire des instances de la classe et la possibilité d'utiliser l'opérateur "new" en rendant le constructeur de la classe privé. Afin de récupérer notre unique instance, nous utiliserons la méthode statique getInstance.
