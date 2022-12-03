@@ -3,7 +3,7 @@
 
 ### Définition : 
 
-Le design pattern "Observer" est l'un des pattern java le plus utile et utilisé.
+Le design pattern "__Observer__" est l'un des pattern java le plus utile et utilisé.
 Il est utilisé pour envoyer un signal à des modules qui jouent le rôle d'observateurs. En cas de notification, les observateurs effectuent alors l'action adéquate en fonction des informations qui parviennent depuis les modules qu'ils observent (les observables). On l'utilise principalemement lorsque l'on doit gérer des évènements.
 
 ### Mais comment fonctionne-t-il ? 
@@ -23,7 +23,7 @@ Dans une classe qui doit déclencher des évenements, on dois y ajouter:
 
 ### Définition : 
 
-Le design pattern "Singleton" est lui aussi l'un des designs patterns le plus utlisé.
+Le design pattern "__Singleton__" est lui aussi l'un des designs patterns le plus utlisé.
 Il répond à plusieurs exigences, l'une des plus importantes est que celui-ci doit doit s'assurer qu'une classe ne puisse produire qu'une seule et unique instance.
 
 ### Mais comment fonctionne-t-il ? 
