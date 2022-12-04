@@ -4,16 +4,16 @@
 ### Définition : 
 
 Le design pattern "__Observer__" est l'un des pattern java le plus utile et utilisé.
-Il est utilisé pour envoyer un signal à des modules qui jouent le rôle d'observateurs. En cas de notification, les observateurs effectuent alors l'action adéquate en fonction des informations qui parviennent depuis les modules qu'ils observent (les observables). On l'utilise principalemement lorsque l'on doit gérer des évènements.
+Il est utilisé pour envoyer un signal à des modules qui jouent le rôle d'observateurs. En cas de notification, les observateurs effectuent alors l'action adéquate en fonction des informations qui parviennent depuis les modules qu'ils observent (les observables). On l'utilise principalement lorsque l'on doit gérer des évènements.
 
 ### Mais comment fonctionne-t-il ? 
-Dans une classe qui doit déclencher des évenements, on dois y ajouter:
+Dans une classe qui doit déclencher des événements, on doit y ajouter:
 
     En attribut : une liste d'Observateurs
     Une méthode permettant d'ajouter un Observateur dans la liste
-    Une méthode permettant d'envoyer un signal a tous ses obsevateurs.
+    Une méthode permettant d'envoyer un signal à tous ses obsevateurs.
     
-"Observateur" est une classe abstraite avec une méthode signal dont héritent des observateurs "concrets" qui implémentent cette méthode.
+"Observateur" est une classe abstraite avec une méthode signale dont héritent des observateurs "concrets" qui implémentent cette méthode.
 
 
 
