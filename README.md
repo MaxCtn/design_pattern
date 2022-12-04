@@ -20,10 +20,11 @@ Le design patern de l'observateur peut appellé avec :
   Le modèle d'observateur utilise trois classes (Subject, Observer et CLient). Dans la classe Subject nous avons un object avec des méthodes qui permettent d'attacher et de détacher des obsereurs avec un client.
 
 Méthodes :
-addObserver (…) : permet d’ajouter un objet « observer » à la collection des objets qui veulent être notifiés.
-removeObserver (…) : permet de supprimer un « observer » depuis cette collection et donc le désinscrire.
-notifierObservers (…) : cette méthode est la plus importante elle doit être appelée à chaque modification de l'état, elle permet au objects souhaitant être au courant du changement d'états les informations qui lui sont utiles
-update(…) : cette méthode est appelé a chaque modification d'état afin de donner la nouvelle information.
+
+  addObserver (…) : permet d’ajouter un objet « observer » à la collection des objets qui veulent être notifiés. <br>
+  removeObserver (…) : permet de supprimer un « observer » depuis cette collection et donc le désinscrire. <br>
+  notifierObservers (…) : cette méthode est la plus importante elle doit être appelée à chaque modification de l'état, elle permet au objects souhaitant être au courant du   changement d'états les informations qui lui sont utiles <br>
+  update(…) : cette méthode est appelé a chaque modification d'état afin de donner la nouvelle information. <br>
 
 En résumer, dans une classe qui doit déclencher des événements, on doit y ajouter:
     
