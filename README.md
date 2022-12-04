@@ -49,7 +49,7 @@ public class Singleton
     {   
       return INSTANCE;
     }
-}
+} 
 ```
 
 ![image](https://user-images.githubusercontent.com/91802050/205171202-f4076789-429f-4198-a7ee-18f93e3b485f.png)
