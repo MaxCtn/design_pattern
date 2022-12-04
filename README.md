@@ -26,6 +26,14 @@ notifierObservers (…) : cette méthode est la plus importante elle doit être 
 update(…) : cette méthode est appelé a chaque modification d'état afin de donner la nouvelle information.
 
 En résumer, dans une classe qui doit déclencher des événements, on doit y ajouter:
+    
+    En attribut : une liste d'Observateurs
+    Une méthode permettant d'ajouter un Observateur dans la liste   
+    Une méthode permettant d'envoyer un signal a tous ses obsevateurs.
+  
+  
+      
+    
 
 
 
