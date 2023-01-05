@@ -1,72 +1,34 @@
-/**
- * 
- */
-package examen2223ETU;
+public class Boss {
+    private String nom;
+    private int attaque, pv;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Random;
+    /* Constructeur privé */
+    private Boss(String nom, int attaque, int pv) {
+        this.nom = nom;
+        this.attaque = attaque;
+        this.pv = pv;
+    }
 
-/**
- * @author z21206029
- *
- */
-public class PileLIFOArray<E> implements PileLIFO<E> {
-	private final ArrayList<Object> pilefifo = new ArrayList<>();
+    /* Instance unique pré-initialisée */
+    private static Boss INSTANCE = new Boss("Boultapier, incarnation du chaos", 150, 10000);
 
-	/**
-	 * 
-	 */
-	public PileLIFOArray() {
-		// TODO Auto-generated constructor stub
-	}
+    /* Point d'accès pour l'instance unique du singleton */
+    public static Boss getInstance(){return INSTANCE;}
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public String getNom() {return nom;}
+    public int getAttaque() {return attaque;}
+    public int getPv() {return pv;}
 
-	}
+    public void setNom(String nom) {this.nom = nom;}
+    public void setAttaque(int attaque) {this.attaque = attaque;}
+    public void setPv(int pv) {this.pv = pv;}
 
-	@Override
-	public void empiler(Object elem) {
-		pilefifo.add(0,elem);
-		
-	}
-
-	@Override
-	public E depiler() {
-		Object top = pilefifo.remove(pilefifo.size() - 1);
-		return null;
-	}
-
-	@Override
-	public E sommet() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public boolean estVide() {
-		if(this.estVide()) 
-		return true;
-		else
-		return false;
-
-	}
-
-	@Override
-	public List<E> asList() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void vider() {
-		pilefifo.clear();
-		
-	}
-
+    @Override
+    public String toString() {
+        return "Boss{" +
+                "nom='" + nom + '\'' +
+                ", attaque=" + attaque +
+                ", pv=" + pv +
+                '}';
+    }
 }
